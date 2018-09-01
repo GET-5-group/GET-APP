@@ -1,0 +1,98 @@
+body{
+    background-color:#f2f2f2;
+    height: 100%;
+}
+.icon {
+    width: 40px;
+    height:40px ;
+    vertical-align: 0em;
+    fill: currentColor;
+    overflow: hidden;
+    line-height: 46px;
+}
+.row1{
+    background-color: #2aa094;
+    height: 50px;
+}
+.zi{
+    line-height: 50px;
+}
+.icon-sousuo{
+    float: right;
+    margin-top: -40px;
+}
+#icon-tianjia path {
+    fill: #fade62;
+}
+.icon-tianjia{
+    width: 40px;
+    height: 40px;
+}
+.icon-faxian{
+    width: 40px;
+    height: 40px;
+}
+.icon-tubiaozhizuomoban{
+    width: 40px;
+    height: 40px;
+}
+.icon-fenxianglicaichengjiu{
+    width: 40px;
+    height: 40px;
+}
+.icon-wo{
+    width: 40px;
+    height: 40px;
+}
+#icon-tubiaozhizuomoban path {
+    fill:#bedebc;
+}
+.row2{
+    margin-top: 5px;
+}
+.mar{
+    padding: 10px;
+}
+.tab1{
+    width: 50%;
+}
+@media(min-width: 62em){
+    .fixdibu{
+        display: none;
+    }
+    .phonetop{
+        display: none;
+    }
+}
+.fixdibu{
+    background-color: white;
+    height: 46px;
+}
+.div5{
+    width: 19.9%;
+    float: left;
+}
+.neirong{
+    float: left;
+}
+.row2-1{
+    background-color: #1296db;
+}
+.zis{
+    font-size: 0.1rem;
+}
+.row2-2{
+    background-color: #fe9770;
+}
+.row2-3{
+    background-color: #79e2bf;
+}
+.row2-4{
+    background-color: #fb8bbc;
+}
+.rowm{
+    margin-top: 20px;
+}
+.rowp{
+    padding: 4px;
+}

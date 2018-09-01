@@ -1,0 +1,60 @@
+body{
+    background-color:#f2f2f2;
+    height: 100%;
+}
+.icon {
+    width: 20px; height:20px ;
+    vertical-align: 0em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.row1{
+    background-color: #2aa094;
+    height: 50px;
+}
+.zi{
+    line-height: 50px;
+}
+.icon-sousuo{
+    float: right;
+    margin-top: -40px;
+}
+.kapian{
+    background-color: white;
+    padding: 0px;
+    margin-top: 5px;
+}
+.row3{
+    margin-top: 5px;
+}
+.row4{
+    margin-top: 5px;
+}
+.mar{
+    padding: 10px;
+}
+.btn2{
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.part1{
+	margin-top: 50px
+}
+.sentence{
+	color: black;
+	font-style: 30;
+}
+.textarea{
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px
+}
+.textareastyle{
+	width:350px;
+	height:300px;
+}
+.more{
+	text-align: center;
+	margin-bottom: 50px
+}

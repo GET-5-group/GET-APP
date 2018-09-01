@@ -1,0 +1,97 @@
+body{
+    background-color:#f2f2f2;
+    height: 100%;
+}
+.icon {
+    width: 20px; height:20px ;
+    vertical-align: 0em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.row1{
+    background-color: #2aa094;
+    height: 50px;
+}
+.zi{
+    line-height: 50px;
+}
+.icon-sousuo{
+    float: right;
+    margin-top: -40px;
+}
+.kapian{
+    background-color: white;
+    padding: 0px;
+    margin-top: 5px;
+}
+.row3{
+    margin-top: 5px;
+}
+.row4{
+    margin-top: 5px;
+}
+.mar{
+    padding: 10px;
+}
+.btn2{
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+.fasongzhengmingshixiang{
+	margin-top:60px;
+}
+.word{
+	color: black;
+	font-style: 30;
+	text-align: center;
+}
+.textarea{
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-left: 10px
+}
+.textareastyle{
+	width:350px;
+	height:300px;
+	}
+.friends{
+	margin-bottom: 50px;
+}
+.invite{
+	color: black;
+	font-style: 30;
+	float: left;
+}
+.choose{
+	text-align:center;
+}
+.yonghu1{
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	float: left;
+}
+.yonghu2{
+	height: 60px;
+	width: 60px;
+	border-radius: 100px
+}
+.yonghu3{
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	float: right;
+}
+.hadchosen{
+	margin-top: 50px
+}
+.more{
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px
+}
+.hadinvited{
+	color: black;
+	font-style: 30
+}
