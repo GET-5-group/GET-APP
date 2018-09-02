@@ -119,8 +119,8 @@ let app = new Vue({
             */
             let randomUrl =
                 Math.round(Math.random()) === 1 ?
-                    "https://github.com/GET-5-group/GET-APP/data/login-failure.json" :
-                    "https://github.com/GET-5-group/GET-APP/data/login-success.json";
+                    "https://get-5-group.github.io/GET-APP/data/login-failure.json" :
+                    "https://get-5-group.github.io/GET-APP/data/login-success.json";
 
             /*
                 下面的两行代码是通过 AJAX 的方式模拟请求随机的 .json 文件
