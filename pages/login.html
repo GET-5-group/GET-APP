@@ -19,12 +19,12 @@
 <body>
     <div class="text-center">
         <form class="form-signin">
-            <form class="form-group" id="loginform">
+            
                 <!--<img class="mb-4" src="../images/fog_64.png" alt="" />-->
                 <!--<h1 class="h3 mb-3 font-weight-normal"></h1>-->
                 <label for="phoneNumber" class="sr-only">手机号</label>
                 <input type="tel" v-model="phoneNumber" id="phoneNumber" class="form-control btn00"  placeholder="请输入手机号" required autofocus />
-            </form>
+           
             <div class="input-group mb-3">
                 <input type="text" v-model="validateCode" class="form-control btn00" id="validateCode" placeholder="请输入手机验证码" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
@@ -36,9 +36,9 @@
                 {{ errorMessage }}
             </div>
 
-            <form class="form-group">
+            
                 <button class="btn btn-lg btn-block btn01" type="button" id="loginbtn" v-on:click="login">登 录</button>
-            </form>
+           
             <div class="zi"><hr>使用第三方登录<hr></div>
 
             <div>
@@ -65,7 +65,7 @@
                 </a>
             </div>
             <br><br>
-            <form class="form-group">
+            
                 <div class="checkbox mar40">
                     <label>
                         <input type="checkbox" value="1">
@@ -73,7 +73,7 @@
                     </label>
                 </div>
                 <span class="mt-5 mb-3 text-muted"><span class="zi">&copy; 2018 电子商务系项目制第五组</span></span>
-            </form>
+            
         </form>
     </div>
     <script src="../cpnts/jquery/jquery-3.3.1.min.js"></script>
