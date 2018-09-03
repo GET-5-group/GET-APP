@@ -1,39 +1,39 @@
-// var countdown=60;
-// function settime(obj) {
-//     if (countdown == 0) {
-//         obj.removeAttribute("disabled");
-//         obj.value="发送验证码";
-//         countdown = 60;
-//         return;
-//     } else {
-//         obj.setAttribute("disabled", true);
-//         obj.value="重新发送(" + countdown + ")";
-//         countdown--;
-//     }
-//     setTimeout(function() {
-//             settime(obj) }
-//         ,1000)
-// }
-//
-// $(function(){
-//     $("#loginbtn").click(function(){
-//         var phoneNumber = $("#phoneNumber");
-//         var validateCode = $("#validateCode");
-//         var msg = "";
-//         if(phoneNumber.val() === ""){
-//             msg = "手机号码不能为空!";
-//             phoneNumber.focus();
-//         }else if(validateCode.val() === ""){
-//             msg = "验证码不能为空!";
-//             validateCode.focus();
-//         }
-//         if(msg !== ""){
-//             alert(msg);
-//         }else{
-//             $("#loginform").submit();
-//         }
-//     })
-// })
+var countdown=60;
+function settime(obj) {
+    if (countdown == 0) {
+        obj.removeAttribute("disabled");
+        obj.value="发送验证码";
+        countdown = 60;
+        return;
+    } else {
+        obj.setAttribute("disabled", true);
+        obj.value="重新发送(" + countdown + ")";
+        countdown--;
+    }
+    setTimeout(function() {
+            settime(obj) }
+        ,1000)
+}
+
+$(function(){
+    $("#loginbtn").click(function(){
+        var phoneNumber = $("#phoneNumber");
+        var validateCode = $("#validateCode");
+        var msg = "";
+        if(phoneNumber.val() === ""){
+            msg = "手机号码不能为空!";
+            phoneNumber.focus();
+        }else if(validateCode.val() === ""){
+            msg = "验证码不能为空!";
+            validateCode.focus();
+        }
+        if(msg !== ""){
+            alert(msg);
+        }else{
+            $("#loginform").submit();
+        }
+    })
+})
 
 
 /*
