@@ -30,6 +30,9 @@ body {
         background-color:#2aa094;
         color: white;
     }
+    .i2{
+        display: none;
+    }
 }
 @media(max-width: 1024px)  {
     body {
@@ -47,6 +50,9 @@ body {
     }
     .btn-outline-secondary.disabled, .btn-outline-secondary:disabled{
         background-color: white;
+    }
+    .i1{
+        display: none;
     }
 }
 hr{
@@ -100,14 +106,22 @@ btn {
     background-color: #eb192d;
     float: right;
 }
-.mar40{
-    margin-top: 40px;
+.mar20{
+    margin-top: 20px;
 }
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled{
     color:black ;
     background-color: #e1f5f1;
     border-color:  #2aa094;
 }
+.img{
+    width: 100px;
+    height: 100px;
+}
+.imgmar{
+    margin-top: -100px;
+}
+
 
 
 

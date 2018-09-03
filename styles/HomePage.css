@@ -43,6 +43,8 @@ hr{
     width: 90px;
     height: 90px;
     margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .tel0{
     font-size: 20px;
