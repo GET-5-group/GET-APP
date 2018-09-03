@@ -8,7 +8,7 @@
     <meta name="author" content="第五组">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../favicon.png">
     <title>登录</title>
     <!-- Bootstrap 样式表 -->
     <link href="../cpnts/bootstrap4.0.0/css/bootstrap.css" rel="stylesheet">
@@ -19,12 +19,15 @@
 <body>
     <div class="text-center">
         <form class="form-signin">
-            
-                <!--<img class="mb-4" src="../images/fog_64.png" alt="" />-->
-                <!--<h1 class="h3 mb-3 font-weight-normal"></h1>-->
-                <label for="phoneNumber" class="sr-only">手机号</label>
-                <input type="tel" v-model="phoneNumber" id="phoneNumber" class="form-control btn00"  placeholder="请输入手机号" required autofocus />
-           
+            <div class="text-center i1">
+                <img class="img" src="../images/../images/G.png" alt="GET图标" />
+            </div>
+            <div class="text-center i2">
+                <img class="img" src="../images/../images/GW.png" alt="GET图标" />
+            </div>
+            <label for="phoneNumber" class="sr-only">手机号</label>
+            <input type="tel" v-model="phoneNumber" id="phoneNumber" class="form-control btn00"  placeholder="请输入手机号" required autofocus />
+            <br>
             <div class="input-group mb-3">
                 <input type="text" v-model="validateCode" class="form-control btn00" id="validateCode" placeholder="请输入手机验证码" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
@@ -38,9 +41,9 @@
 
             
                 <button class="btn btn-lg btn-block btn01" type="button" id="loginbtn" v-on:click="login">登 录</button>
-           
-            <div class="zi"><hr>使用第三方登录<hr></div>
-
+            <p>&nbsp;</p>
+            <div class="zi">————&nbsp;使用第三方登录&nbsp;————</div>
+            <p>&nbsp;</p>
             <div>
                 <a href="QQ.html">
                     <span class="circle text-center cir1">
@@ -66,7 +69,7 @@
             </div>
             <br><br>
             
-                <div class="checkbox mar40">
+                <div class="checkbox mar20">
                     <label>
                         <input type="checkbox" value="1">
                         <span class="zi">查看并同意用户协议</span>
