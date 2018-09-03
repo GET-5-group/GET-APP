@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang = "zh-CN">
+<head>
+     <meta charset = "UTF-8">
+     <meta http-equiv="X-UA-Compatible"content="IE=edge">
+     <meta name = "viewport" content="width=device,initial-scale=1,userscalable=no">
+     <title>GET-个人资料</title>
+     <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
+     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+     <style type="text/css">
+      html{
+        font-size:62.5%;
+      }
+      a{
+        color: white;
+      }
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      body{
+        background-color: #f8f8f8;
+         margin-bottom:1.5rem;
+      }
+      .navbar{
+        margin-bottom: 0.1rem;
+      }
+      .wordchange{
+        background-color:blue;
+        float: right;
+        border:0rem;
+        margin-right: 1rem;
+      }
+      .rowhead{
+         margin-top:0.5rem;
+      }
+      .selfhead{
+        padding-right: 0rem;
+
+
+      }
+      .selfhead img{
+        width:10rem;height: 10rem;
+        border-radius: 10rem; 
+
+      }
+      .icon-v-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .iconword{
+       
+        font-size:1.6rem;
+        line-height: 8rem;
+      }
+   
+      .area{
+        width:96%;height:25rem;
+        margin:0 auto;
+        background: white; 
+        margin-bottom:0.5rem;
+      }
+    
+      .col-xs-4,.row{
+        text-align: center;
+        background-color:white;
+      }
+      .navbar{
+        background-color:#2BA195;
+      }
+      .center-img img{
+        width: 8rem;
+      }
+      .center-img{
+        text-align:center;
+        margin-top:1rem;
+        
+      }
+      #row-only{
+        margin-bottom: 2rem;
+        height: 10rem;
+        background: #eee;
+      }
+      .row{
+        margin-bottom:0.2rem;
+      }
+      #sexradio{
+        margin-top: 0.5rem;
+      }
+      .control-label{
+       
+        margin-top: 1rem;
+      }  
+      .label-siren{
+          margin-top:1.6rem;    
+            } 
+      .controls{
+        margin-top: 1rem;
+      }
+      .controls button{
+        width:10rem;
+      }
+     
+                 /*媒体查询*/
+        /*<=320px*/
+      @media screen and (max-width: 320px) {
+
+        html{
+          font-size:50%;
+        }
+        
+      }
+        /*600px ~960px*/
+      @media screen and (min-width: 600px){
+        html{
+               font-size:100%;
+        }
+        .area{
+          height: 35rem;
+        }
+      }
+      @media screen and (min-width: 960px){
+         html{
+               font-size:120%;
+        }
+        .area{
+          height: 45rem;
+        }
+      }
+      @media (min-width: 768px){
+        .form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0; 
+        text-align: left;
+       }
+      }
+     </style>  
+</head>
+<body>
+    
+	      <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GET</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-left " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav ">
+              <li class="dropdown ">
+                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现自我<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">性格测试</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">职业查找</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">能力评定</a></li>  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">小日子</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">任务记录</a></li>
+                  <li><a href="#"></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">学习进度</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">自我修养</a></li>
+                 
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成就自我<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">成就清单</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">导出简历</a></li>
+                </ul>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+     <article>
+     	<div class="row" id="row-only">
+        <div class="col-xs-12 col-sm-12 col-md-6 center-img">
+          <img src="../../image/头像.jpeg" class="img-circle"/>
+        </div>
+      </div>
+      <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" >— 账户信息 —</label>		
+            </div>
+        </div> 
+      
+     	 <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">昵称：</label>
+              <div class="col-xs-6 ">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入昵称" >
+              </div>
+            </div>
+          </div>
+        
+         <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">激励语：</label>
+              <div class="col-xs-6">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入激励语">
+              </div>
+            </div>
+          </div>
+        
+         <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">注册日期：</label>
+              <div class="col-xs-6" align="left">
+            <select class="input-xlarge" >
+               <option>2018-01-01</option>
+               <option>2018-01-02</option>
+               <option>2018-01-03</option>
+               <option>2018-01-04</option>
+               <option>2018-01-05</option>
+               <option>2018-01-06</option>
+               <option></option></select>
+          </div>
+            </div>
+          </div>  
+        
+        <div class="row">
+            <div class="form-group">
+              <label class="label-siren" for="inputEmail3" >— 私人信息（仅自己可见）—</label>		
+            </div>
+        </div>
+        
+         <div class="row">
+         	<div class="form-group">
+               <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">性别：</label>
+                <div class="col-xs-6" id="sexradio" align="left">
+	                <label id="1" >
+	                	<input id="1" class="W_radio" type="radio" name="gender" value="m" align="left">  男
+	                </label>
+	                <label id="1">
+	                	<input id="1" class="W_radio" type="radio" checked="checked" name="gender" value="f" >  女
+	                </label>
+              </div>  
+          </div>
+         </div>	
+       
+        <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">生日：</label>
+              <div class="col-xs-6" align="left">
+	             <select class="input-xlarge">
+	               <option>2018-01-01</option>
+	               <option>2018-01-02</option>
+	               <option>2018-01-03</option>
+	               <option>2018-01-04</option>
+	               <option>2018-01-05</option>
+	               <option>2018-01-06</option>
+	               <option></option></select>
+          </div>
+            </div>
+          </div>
+        
+        <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">所在地区：</label>
+            <div class="col-xs-6" align="left">
+			     <select class="input-xlarge">
+			      <option>北京</option>
+			      <option>上海</option>
+			      <option>广州</option>
+			      <option>江苏</option>
+			      <option>四川</option>
+			      <option>河南</option>
+			      <option>河北</option>
+			      <option>安徽</option>
+			      <option>内蒙</option>
+			      <option>新疆</option>
+			      <option>海南</option>
+			      <option>贵州</option>
+			      <option>山东</option>
+			      <option>山西</option>
+			      <option>西藏</option></select>
+              </div>
+            </div>
+          </div> 
+        
+        <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">毕业院校：</label>
+              <div class="col-xs-6" align="left">
+                 <select class="input-xlarge">
+			      <option>中国矿业大学</option>
+			      <option>北京大学</option>
+			      <option>清华大学</option>
+			      <option>复旦大学</option></select>
+              </div>
+            </div>
+          </div>   
+        
+        <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">真实姓名:</label>
+              <div class="col-xs-6">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入真实姓名">
+              </div>
+            </div>
+          </div> 
+        
+        <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">证件号码：</label>
+              <div class="col-xs-6">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入证件号码">
+              </div>
+            </div>
+          </div>   
+        
+        <div class="controls" align="center">
+            <button class="btn btn-success"><a href="04wode.html">提交</a></button>
+          </div>
+        </div>  
+      </article>                               
+</body>
+<html>                

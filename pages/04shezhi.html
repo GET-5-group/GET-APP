@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang = "zh-CN">
+<head>
+     <meta charset = "UTF-8">
+     <meta http-equiv="X-UA-Compatible"content="IE=edge">
+     <meta name = "viewport" content="width=device,initial-scale=1,userscalable=no">
+     <title>设置</title>
+     <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
+     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+     <style type="text/css">
+      html{
+        font-size:62.5%;
+      }
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      body{
+        background-color: #eee;
+         margin-bottom:1.5rem;
+      }
+      .navbar{
+        margin-bottom: 0.1rem;
+      }
+      .wordchange{
+        background-color:blue;
+        float: right;
+        border:0rem;
+        margin-right: 1rem;
+      }
+      .rowhead{
+         margin-top:0.5rem;
+      }
+      .selfhead{
+        padding-right: 0rem;
+
+
+      }
+      .selfhead img{
+        width:10rem;height: 10rem;
+        border-radius: 10rem; 
+
+      }
+      .icon-v-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .iconword{
+       
+        font-size:1.6rem;
+        line-height: 8rem;
+      }
+      .svg_1{
+        float:left;
+        font-size:3rem;
+        margin:1.2rem 2rem;
+      }
+      .svg{
+        float:left;
+        font-size:4rem;
+        margin:1.2rem 2rem;
+      }
+
+      .leidatitle{
+        margin:0.9rem auto;
+        font-size:2.2rem;
+      }
+      .area{
+        width:96%;height:25rem;
+        margin:0 auto;
+        background: white; 
+        margin-bottom:0.5rem;
+      }
+      h2{
+          text-align: center;
+      }
+      h3{
+        text-align:left;
+        margin-bottom:0rem;
+        margin-top:1rem;
+      }
+      #finishrow{
+        background: #fcacac;
+      }
+      .finish{
+        border:1px;
+      }
+      .finish h3{
+        font-size: 2rem;
+        text-align:center;
+        margin-top: 2rem;
+        margin-bottom:0rem;
+      }
+      .finish h5{
+        font-size: 1.5rem;
+        margin-bottom:: 0rem;
+        color:#facaca;
+      }
+      #finishmuban{
+      width: 49%;
+      background: white;
+       padding-left: 0rem;
+       padding-right: 0rem;
+      }
+
+      #finishlist{
+        width:49%;
+        background: white;
+        margin-right: 0.2rem;
+        padding-right: 0rem;
+      }
+
+      .col-xs-4,.row{
+        text-align: center;
+        background-color:white;
+      }
+      .navbar{
+        background-color:#2BA195;
+      }
+      #row-only{
+       
+        background: #f8f8f8;
+        margin-top: 2rem;
+        
+        height: 6rem;
+        margin-bottom: 2rem;
+        line-height: 6rem;
+      }
+      .row{
+        height: 4rem;
+        margin-bottom: 0.2rem;
+        line-height: 4rem;
+      }
+      img{
+        width: 1rem;
+        width: 4.5rem;
+        margin-right: 2.5rem;
+        margin-bottom: 0.1rem;
+
+      }
+       .col-xs-6{
+        margin-bottom: -1rem;
+      }
+
+
+
+                 /*媒体查询*/
+        /*<=320px*/
+      @media screen and (max-width: 320px) {
+
+        html{
+          font-size:50%;
+        }
+        
+      }
+        /*600px ~960px*/
+      @media screen and (min-width: 600px){
+        html{
+               font-size:100%;
+        }
+        .area{
+          height: 35rem;
+        }
+      }
+      @media screen and (min-width: 960px){
+         html{
+               font-size:120%;
+        }
+        .area{
+          height: 45rem;
+        }
+      }
+      @media (min-width: 768px){
+        .form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: left;
+       }
+      }
+     </style>  
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GET</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-left " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav ">
+              <li class="dropdown ">
+                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现自我<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">性格测试</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">职业查找</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">能力评定</a></li>  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">小日子</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">任务记录</a></li>
+                  <li><a href="#"></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">学习进度</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">自我修养</a></li>
+                 
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成就自我<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">成就清单</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">导出简历</a></li>
+                </ul>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header> 
+  <article>
+       
+     	 <div class="row" id="row-only">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">账户</label>
+              <div class="col-xs-6 " align="right">
+              	<img src="../../image/头像.jpeg" class="img-circle">
+              </div>
+            </div>
+          </div>
+       
+     	 <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">账户安全</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+         </div>   
+        
+     	 <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">消息设置</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+         </div> 
+        
+     	 <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">屏蔽设置</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+          </div>
+       
+     	 <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">隐私设置</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+          </div>
+        
+     	 <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">通用设置</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+          </div>
+        
+     	 <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">清理缓存</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">1024M ></label>
+              </div>
+            </div>
+          </div> 
+       
+     	  <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">护眼模式</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+          </div> 
+         
+           <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">客服中心</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+          </div> 
+        
+           <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-6 col-sm-4 col-md-4 control-label">关于本APP</label>
+              <div class="col-xs-6 " align="right">
+              	<label for="inputEmail3" class="col-xs-10 col-sm-4 col-md-4 control-label">></label>
+              </div>
+            </div>
+          </div> 
+           
+  </article>  
+</body>
+<html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,userscalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Get-成就自我主页</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      html{
+        font-size:62.5%;
+      }
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      body{
+        background-color: #f8f8f8;
+         margin-bottom:1.5rem;
+      }
+      a{
+        color: black;
+      }
+      .navbar{
+        margin-bottom: 0.1rem;
+      }
+      .wordchange{
+        background-color:#dff0d8;
+        float: right;
+        border:0rem;
+        margin-right: 1rem;
+      }
+      .rowhead{
+         margin-top:0.5rem;
+      }
+      .selfhead{
+        padding-right: 0rem;
+
+
+      }
+      .selfhead img{
+        width:10rem;height: 10rem;
+        border-radius: 10rem; 
+
+      }
+      .icon-v-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      .iconword{
+       
+        font-size:1.6rem;
+        line-height: 8rem;
+      }
+      .svg_1{
+        float:left;
+        font-size:3rem;
+        margin:1.2rem 2rem;
+      }
+      .svg{
+        float:left;
+        font-size:4rem;
+        margin:1.2rem 2rem;
+      }
+
+      .leidatitle{
+        margin:0.9rem auto;
+        font-size:2.2rem;
+      }
+      .area{
+        width:90%;height:25rem;
+        margin:0 auto;
+        background: white; 
+        margin-bottom:0.5rem;
+        margin-left: 5%;
+      }
+      h2{
+          text-align: center;
+      }
+      h3{
+        text-align:left;
+        margin-bottom:0rem;
+        margin-top:1rem;
+      }
+      #finishrow{
+        background: #f8f8f8;
+      }
+      .finish{
+        border:1px;
+      }
+      .finish h3{
+        font-size: 2rem;
+        text-align:center;
+        margin-top: 2rem;
+        margin-bottom:0rem;
+      }
+      .finish h5{
+        font-size: 1rem;
+        margin-bottom: 0rem;
+        color:#ddd;
+      }
+      #finishmuban{
+      width: 49%;
+      background: white;
+       padding-left: 0rem;
+       padding-right: 0rem;
+      }
+
+      #finishlist{
+        width:49%;
+        background: white;
+        margin-right: 0.2rem;
+        padding-right: 0rem;
+      }
+
+      .col-xs-4,.row{
+        text-align: center;
+        background-color:white;
+      }
+      .navbar{
+        background-color:#2aa094;
+      }
+                 /*媒体查询*/
+        /*<=320px*/
+      @media screen and (max-width: 320px) {
+
+        html{
+          font-size:50%;
+        }
+        
+      }
+        /*600px ~960px*/
+      @media screen and (min-width: 600px){
+        html{
+               font-size:100%;
+        }
+        .area{
+          height: 35rem;
+        }
+      }
+      @media screen and (min-width: 960px){
+         html{
+               font-size:120%;
+        }
+        .area{
+          height: 45rem;
+        }
+      }
+         </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GET</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">性格测试</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">职业查找</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">能力评定</a></li>  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">小日子</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">任务记录</a></li>
+                  <li><a href="#"></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">学习进度</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">自我修养</a></li>
+                 
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成就自我<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">成就清单</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">导出简历</a></li>
+                </ul>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <article>
+      <div class="row rowhead">
+        <div class="col-xs-4 selfhead"><img src="../image/beijing3.jpg" alt="头像"/></div>
+        <div class="col-xs-8">
+             <h3>激励语：</h3><br/>
+             <p style="text-align: left;">好好学习天天向上好好学习天天向上好好学习<button class="wordchange">修改</button> </p>
+
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-xs-6 icon-v-center">
+         <span class="svg_1">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jifen"></use>
+            </svg>
+         </span><p class="iconword">成就值：***</p>
+        </div>
+        <div class="col-xs-6 icon-v-center">
+          <span class="svg_1">
+           <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jinbi"></use>
+            </svg>
+         </span>
+        <p class="iconword">金币：***</p>
+        </div>
+      </div>
+      <h2 class="leidatitle">能力雷达图</h2>
+      <div class="area">
+        
+      </div>
+      <div class="row" id="finishrow">
+         <div class="finish col-xs-6" id="finishlist">
+          <a href="04chengjiuqingdan.html"><span class="svg">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-daoru"></use>
+            </svg></span></a>
+            <h3><a href="04chengjiuqingdan.html">成就清单</a></h3>
+            <h5 class="finish-h5"><a href="04chengjiuqingdan.html" class="finish-h5">查看历史成就</a></h5>
+          </span>
+        </div>
+         <div class="col-xs-6 finish" id="finishmuban">
+          <a href="04xuanzejianlimuban.html"><span class="svg">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-gerenjianli"></use>
+            </svg>
+         </span></a>
+          <h3><a href="04xuanzejianlimuban.html">导出简历</a></h3>
+          <h5 class="finish-h5"><a href="04xuanzejianlimuban.html">精美简历模板</a></h5>
+       </div>
+
+      </div>
+    </article>
+    
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 引入iconfont字体图标-->
+   <script src="../fonts/icons/font_783350_3kbws5kmv3r/iconfont.js"></script>
+  </body>
+</html>

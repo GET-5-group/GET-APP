@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Get-填写简历</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      html{
+        font-size:62.5%;
+      }
+      a{
+        color: white;
+      }
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      body{
+        background-color: #eee;
+        margin-bottom:1.5rem;
+      }
+      .row {
+         background-color:white;
+         padding-left: 1.5rem;
+         margin-bottom: 0.2rem;
+      }
+      .navbar{
+		  background-color: #2aa094;
+        margin-bottom: 0.1rem;
+      }
+      #sexlabel{
+        margin-top:0rem;
+      }
+      .control-label{
+        line-height: 1.5rem;
+        height: 3.4rem;
+        padding-top: 1.1rem;
+        padding-right: 0rem;
+        margin-top: 1.625rem;
+      }
+      .col-xs-8{
+        padding-left: 0rem;
+        margin-top: 1.625rem;
+      }
+      .choosebtn{
+        text-align: center;
+      }
+
+                 /*媒体查询*/
+        /*<=320px*/
+      @media screen and (max-width: 320px) {
+
+        html{
+          font-size:50%;
+        }
+        
+      }
+        /*600px ~960px*/
+      @media screen and (min-width: 600px){
+        html{
+               font-size:100%;
+        }
+        .area{
+          height: 35rem;
+        }
+      }
+      @media screen and (min-width: 960px){
+         html{
+               font-size:120%;
+        }
+        .area{
+          height: 45rem;
+        }
+      }
+      @media (min-width: 768px){
+        .form-horizontal .control-label {
+        padding-top: 7px;
+        margin-bottom: 0;
+        
+        text-align: center;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GET</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">性格测试</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">职业查找</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">能力评定</a></li>  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">小日子</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">任务记录</a></li>
+                  <li><a href="#"></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">学习进度</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">自我修养</a></li>
+                 
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成就自我<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">成就清单</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">导出简历</a></li>
+                </ul>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    </header>
+    <article>
+       <div class="container-fluid">
+        <form class="form-horizontal">
+          <div class="row">
+            <div class="col-xs-5">
+              <div class="form-group">
+                <span class="svg_1">
+                   <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#icon-gengduo"></use>
+                    </svg>
+                 </span>
+               <input type="image" name="add-image" src="">
+                <p class="help-block">添加照片</p>
+              </div>
+            </div>
+
+            <div class="col-xs-7">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-xs-4 control-label">姓名：</label>
+                <div class="col-xs-8">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="请输入姓名">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-xs-4 control-label" id="sexlabel">性别：</label>
+                 <label  class="btn btn-info">
+                    <input  type="radio" name="options"> 男
+                </label>
+               
+                <label  class="btn btn-info">
+                    <input  type="radio" name="options"> 女
+                </label>
+                
+              </div>                  
+            </div>
+
+          </div>
+     
+          <div class="row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 col-sm-4 col-md-4 control-label">出生年月：</label>
+              <div class="col-xs-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入出生年月">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+             <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 control-label">最高学历：</label>
+              <div class="col-xs-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入学历">
+              </div>
+            </div>
+          </div>
+          <div class="row">  
+             <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 control-label">联系方式：</label>
+              <div class="col-xs-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入联系方式">
+              </div>
+            </div>
+          </div>
+          <div class="row">  
+             <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 control-label">期望薪资：</label>
+              <div class="col-xs-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入期望薪资">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+           <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 control-label">期望职位：</label>
+              <div class="col-xs-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入期望职位">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+             <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 control-label">求职区域：</label>
+              <div class="col-xs-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入求职区域">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+             <div class="form-group">
+              <label for="inputEmail3" class="col-xs-4 control-label">工作经历：</label>
+              <div class="col-xs-8">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入工作经历">
+              </div>
+            </div>
+          </div>  
+       
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">技能证书</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">职业能力</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">实习经历</h3>
+            </div>
+            <div class="panel-body">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  京东集团宿迁实习;
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  ***电子商务公司实习
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">校园经历</h3>
+            </div>
+            <div class="panel-body">
+               <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                 成功举办******比赛
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                 参加大学生数学建模大赛获得*等奖
+                </label>
+              </div>
+            </div>
+          </div>
+           <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">自我评价</h3>
+            </div>
+            <div class="panel-body">
+              <textarea class="form-control" rows="3">
+                
+              </textarea>
+            </div>
+          </div>
+          <div class="choosebtn">
+            <button type="button" class="btn btn-info "><a href="04xuanzejianlimuban.html">选择简历模板</a></button>
+          </div>
+        </form>
+      </div>
+    </article>
+   
+    
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 引入iconfont字体图标-->
+    <script src="../fonts/icons/font_783350_3kbws5kmv3r/iconfont.js"></script>
+  </body>
+</html>

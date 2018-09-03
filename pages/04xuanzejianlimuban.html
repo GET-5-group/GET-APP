@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Get-选择简历模板</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      html{
+        font-size:62.5%;
+      }
+      a{
+        color: white;
+      }
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      body{
+        background-color: #f8f8f8;
+         padding-bottom: 1.5rem;
+      }
+      .navbar{
+		background-color: #2aa094;
+        margin-bottom: 0.1rem;
+      }
+
+      .row{
+        background-color:white;
+      }
+      /*  排版控制  */
+      .biaoqian{
+        padding-right: 0rem;
+      }
+      .biaoqian h4{
+        margin-top:2.2rem;
+      }
+      .btngroup{
+        margin-top: 1rem;
+      }
+
+      /*   按钮控制  */
+      .btn-group-sm>.btn, .btn-sm{
+        border-radius: 3rem;
+      }
+      .btn-sm{
+        background: yellow;
+      }
+      .fenlei button.btn{
+        margin-right: 2rem;
+        margin-top: 1rem;
+        width: 5rem;
+      }
+     .paixu button.btn{
+        margin-right: 2rem;
+        margin-top: 1rem;
+        width: 7rem;
+      }
+
+     /*   选择简历模板  */
+      form{
+        margin-top: 0.5rem;
+      }
+
+      form div.row  img{
+
+        height: 12rem;
+        margin-top: 1.2rem;
+      }
+      .form-img{
+        padding-left: 3rem;
+      }
+      .form-img label{
+        border-color:#fff;
+      }
+      .more div.col-12{
+       text-align: center;
+       height: 6.5rem;
+       padding-top: 2.5rem;
+      }
+      /* 固定在底部的button  */
+      .fixed-bottom{
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        background: #ddd;
+        text-align: right;
+        
+      }
+      .info{
+        width: 4rem;
+        white-space: pre-wrap;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+
+      }
+      .loading{
+        display: none;
+      }
+
+                 /*媒体查询*/
+        /*<=320px*/
+      @media screen and (max-width: 320px) {
+
+        html{
+          font-size:50%;
+        }
+        
+      }
+        /*600px ~960px*/
+      @media screen and (min-width: 600px){
+        html{
+               font-size:100%;
+        }
+        .area{
+          height: 35rem;
+        }
+        form div.col-xs-6{
+          text-align:center;
+        }
+        .form-img{
+          padding-left: 0rem;
+        }
+      }
+      @media screen and (min-width: 960px){
+         html{
+               font-size:120%;
+        }
+        .area{
+          height: 45rem;
+        }
+      }
+      /*height查询*/
+       @media screen and (min-height: 700px){
+          
+          form div.row img{
+            height: 17rem;
+          }
+
+       }
+       @media screen and (min-height: 800px){
+          
+          form div.row img{
+            height: 21rem;
+          }
+
+       }
+
+        @media screen and (min-height: 1300px){
+          
+          form div.row img{
+            height: 23rem;
+          }
+
+       }
+
+         </style>
+    
+
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">GET</a></div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">性格测试</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">职业查找</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">能力评定</a></li>  
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">小日子</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">任务记录</a></li>
+                  <li><a href="#"></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">学习进度</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">自我修养</a></li>
+                 
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成就自我<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">成就清单</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">导出简历</a></li>
+                </ul>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    </header>
+    <article>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-3 col-sm-2 col-md-2 biaoqian">
+            <h4>分类：</h4>
+          </div>
+          <div class="col-xs-9 col-sm-10 col-md-10 fenlei">
+            <p class="btngroup">
+              <button type="button" class="btn btn-default btn-sm">全部</button>
+              <button type="button" class="btn btn-default btn-sm">简洁</button>
+              <button type="button" class="btn btn-default btn-sm">个性</button>
+              <button type="button" class="btn btn-default btn-sm">免费</button>
+              <button type="button" class="btn btn-default btn-sm">付费</button>
+              
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-3 col-sm-2 col-md-2 biaoqian">
+            <h4>排序：</h4>
+          </div>
+          <div class="col-xs-9 col-sm-10 col-md-10 paixu">
+            <p class="btngroup">
+              <button type="button" class="btn btn-default btn-sm">热门推荐</button>
+              <button type="button" class="btn btn-default btn-sm">最新发布</button>
+              <button type="button" class="btn btn-default btn-sm">销售最旺</button>
+              <button type="button" class="btn btn-default btn-sm">人气最旺</button>
+            </p>
+          </div>
+        </div>
+        <form>
+          <div class="row">
+            <div class="col-xs-6 form-img">
+              <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+               <label  class="btn btn-default">
+                 <input class="radios" type="radio" name="options"> 模板一
+               </label>
+            </div>
+            <div class="col-xs-6 form-img">
+              <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+               <label  class="btn btn-default">
+                 <input class="radios" type="radio" name="options"> 模板二
+               </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 form-img">
+              <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+               <label  class="btn btn-default">
+                 <input class="radios" type="radio" name="options"> 模板三
+               </label>
+            </div>
+            <div class="col-xs-6 form-img">
+              <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+               <label  class="btn btn-default">
+                 <input class="radios" type="radio" name="options"> 模板四
+               </label>
+            </div>
+          </div>
+          <div class="row more">
+             <div class="col-12">
+               <span>加载更多</span>
+             </div>
+          </div>
+          
+            <div class="fixed-bottom">
+              <button type="button" class="btn btn-info info"><a href="04yulanjianli.html">预览简历</a></button>
+            </div>
+          <div class="loading">
+            <div class="row">
+              <div class="col-xs-6 form-img">
+                <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+                 <label  class="btn btn-default">
+                   <input class="radios" type="radio" name="options"> 模板一
+                 </label>
+              </div>
+              <div class="col-xs-6 form-img">
+                <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+                 <label  class="btn btn-default">
+                   <input class="radios" type="radio" name="options"> 模板二
+                 </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 form-img">
+                <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+                 <label  class="btn btn-default">
+                   <input class="radios" type="radio" name="options"> 模板三
+                 </label>
+              </div>
+              <div class="col-xs-6 form-img">
+                <img src="../image/简历模板.jpg" alt="简历模板"/><br/>
+                 <label  class="btn btn-default">
+                   <input class="radios" type="radio" name="options"> 模板四
+                 </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+   
+    </article>
+    
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 引入iconfont字体图标-->
+    <script src="../fonts/icons/font_783350_3kbws5kmv3r/iconfont.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $('.col-12 span').on('click',function(){
+      $('.loading').css('display','block');
+      $('.col-12 span').css('display','none')
+    })
+      
+    </script>   
+  </body>
+</html>
