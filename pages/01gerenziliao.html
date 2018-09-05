@@ -4,10 +4,114 @@
      <meta charset = "UTF-8">
      <meta http-equiv="X-UA-Compatible"content="IE=edge">
      <meta name = "viewport" content="width=device,initial-scale=1,userscalable=no">
-     <title>GET-个人资料</title>
+      <link rel="icon" href="../favicon.png">
+     <title>个人资料</title>
      <link href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" rel="stylesheet">
      <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
      <style type="text/css">
+      #nav-dibu{
+      background: white;
+    }
+    .nav-dibu{
+      display: flex;
+      justify-content: space-between;
+      font-size: 5.8rem;
+      background: white;
+      padding:0rem;
+
+    }
+    .icon {
+            width: 40px;
+            height: 40px;
+            vertical-align: 0em;
+           
+            overflow: hidden;
+            line-height: 46px;
+        }
+        @media(min-width: 62em) {
+            .fixdibu {
+                display: none;
+            }
+        }
+        .fixdibu {
+            background-color: white;
+            height: 46px;
+        }
+        .div5 {
+            width: 19.9%;
+            float: left;
+        }
+        #icon-tianjia path {
+            fill: #fade62;
+        }
+        #icon-faxian path {
+           
+        }
+        #icon-fenxianglicaichengjiu path {
+             fill: #209cdd;
+        }
+        #icon-tubiaozhizuomoban path {
+            
+        }
+        #icon-wo path {
+            
+        }
+        .icon-tianjia {
+            width: 40px;
+            height: 40px;
+        }
+        .icon-fenxianglicaichengjiu {
+            width: 40px;
+            height: 40px;
+        }
+        .icon-tubiaozhizuomoban {
+            width: 40px;
+            height: 40px;
+        }
+        .icon-fenxianglicaichengjiu {
+            width: 40px;
+            height: 40px;
+        }
+        .icon-wo{
+            width: 40px;
+            height: 40px;
+        }
+
+      
+    .navbar a:focus, .navbar a:hover{
+      color:white;
+    }
+    #button-left{
+      float: left;
+      margin-left: 1rem;
+    }
+    .navbar-brand{
+      margin-left: 8rem;
+
+    }
+    .navbar-default .navbar-nav>li>a:focus {
+    color: white;
+}
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: #2aa094;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: white;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: white;
+    }
+    .navbar-default .navbar-brand {
+      color: white;
+    }
+    .navbar-default .navbar-nav>li>a {
+      color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: white;}
+    .navbar{
+      background-color:#2AA094;
+    }
       html{
         font-size:62.5%;
       }
@@ -111,8 +215,16 @@
         html{
           font-size:50%;
         }
-        
+         .navbar-brand {
+            margin-left: 6rem;
+        }
       }
+       @media  screen and (min-width: 400px) {
+         .navbar-brand {
+              margin-left: 10rem;
+          }
+                    
+        }
         /*600px ~960px*/
       @media screen and (min-width: 600px){
         html{
@@ -141,12 +253,12 @@
 </head>
 <body>
     
-	      <header>
+ <header>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button id="button-left" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -156,38 +268,38 @@
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-left " id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav ">
-              <li class="dropdown ">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现自我<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">性格测试</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">职业查找</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">能力评定</a></li>  
+          <div class="collapse navbar-collapse navbar-left" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="02faxianziwo.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: #2aa094;">
+                  <li><a href="02xinggeceshi.html">性格测试</a></li>
+                 
+                  <li><a href="02zhiyechazhao.html">职业查找</a></li>
+                
+                  <li><a href="02nenglipingding.html">能力评定</a></li>  
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理自我 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">小日子</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">任务记录</a></li>
-                  <li><a href="#"></a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">学习进度</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">自我修养</a></li>
+                <a href="03guanliziwo.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理自我 <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: #2aa094;">
+                  <li><a href="03xiaorizi.html">小日子</a></li>
+                 
+                  <li><a href="03tuibianjilu.html">蜕变记录</a></li>
+                 
+                  
+                  <li><a href="03renwudaka.html">任务打卡</a></li>
+                 
+                  <li><a href="03xuexijindu.html">学习进度</a></li>
                  
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成就自我<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">成就清单</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">导出简历</a></li>
+                <a href="04chengjiuziwo.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">成就自我<span class="caret"></span></a>
+                <ul class="dropdown-menu " style="background-color: #2aa094;">
+                  <li><a href="04chengjiuqingdan.html">成就清单</a></li>
+                
+                  <li><a href="04tianxiejianli.html">导出简历</a></li>
                 </ul>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -335,6 +447,52 @@
             <button class="btn btn-success"><a href="04wode.html">提交</a></button>
           </div>
         </div>  
-      </article>                               
+      </article>     
+      <footer>
+      <nav class="navbar navbar-fixed-bottom visible-xs" id="nav-dibu">
+        <div class="container nav-dibu">
+           <span class="text-center div5">
+                <a href="02faxianziwo.html">
+                    <svg class="icon icon-faxian" aria-hidden="true">
+                        <use xlink:href="#icon-faxian"></use>
+                    </svg>
+                </a>
+            </span>
+            <span class="text-center div5">
+                <a href="03guanliziwo.html">
+                    <svg class="icon icon-tubiaozhizuomoban" aria-hidden="true">
+                    <use xlink:href="#icon-tubiaozhizuomoban"></use>
+                </svg>
+                </a>
+            </span>
+            <span class="text-center div5">
+                <a href="04chengjiuziwo.html">
+                    <svg class="icon icon-tianjia" aria-hidden="true">
+                        <use xlink:href="#icon-tianjia"></use>
+                    </svg>
+                </a>
+            </span>
+            <span class="text-center div5">
+                <a href="01wode.html">
+                    <svg class="icon icon-fenxianglicaichengjiu" aria-hidden="true">
+                        <use xlink:href="#icon-fenxianglicaichengjiu"></use>
+                    </svg>
+                </a>
+            </span>
+            <span class="text-center div5">
+                 <a>
+                    <svg class="icon icon-wo" aria-hidden="true">
+                        <use xlink:href="#icon-wo"></use>
+                    </svg>
+                 </a>
+            </span>
+        </div>
+      </nav>
+    </footer>
+      <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 引入iconfont字体图标-->
+    <script src="../fonts/icons/font_783350_3kbws5kmv3r/iconfont.js"></script>                          
 </body>
 <html>                
