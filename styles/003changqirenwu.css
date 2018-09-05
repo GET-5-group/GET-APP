@@ -2,6 +2,16 @@ body{
     background-color:#f2f2f2;
     height: 100%;
 }
+  #tianjia{
+           position: absolute;
+           right: 0;
+           z-index: 10000;
+           top: 15%;
+           font-color:white;
+        }
+#icon-tianjia path{
+        fill: white;
+       }
 .icon {
     width: 40px;
     height:40px ;
@@ -94,6 +104,10 @@ body{
 .rowp{
     padding: 4px;
 }
+a:link{
+	color: #000000;
+}
+
 .zi{
             line-height: 56px;
             z-index: 10000;
