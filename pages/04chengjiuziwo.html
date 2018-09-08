@@ -208,7 +208,7 @@
         border:1px;
       }
       .finish h3{
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align:center;
         margin-top: 2rem;
         margin-bottom:0rem;
@@ -216,7 +216,7 @@
       .finish h5{
         font-size: 1rem;
         margin-bottom: 0rem;
-        color:#ddd;
+        color:#999;
       }
       #finishmuban{
       width: 49%;
@@ -330,57 +330,79 @@
       </nav>
     </header>
     <article>
-      <div class="row rowhead">
-        <div class="col-xs-4 selfhead"><img src="../images/beijing3.jpg" alt="头像"/></div>
-        <div class="col-xs-8">
-             <h3>激励语：</h3><br/>
-             <p style="text-align: left;">好好学习天天向上好好学习天天向上好好学习<button class="wordchange">修改</button> </p>
+      <div class="container">
+        <div class="row rowhead">
+          <div class="col-xs-4 selfhead"><img src="../images/beijing3.jpg" alt="头像"/></div>
+          <div class="col-xs-8">
+               <h3>激励语：</h3><br/>
+               <p style="text-align: left;">好好学习天天向上好好学习天天向上好好学习<button class="wordchange" data-toggle="modal" data-target="#myModal1">修改</button> </p>
 
-        </div> 
-      </div>
-      <div class="row">
-        <div class="col-xs-6 icon-v-center">
-         <span class="svg_1">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-jifen"></use>
-            </svg>
-         </span><p class="iconword">成就值：***</p>
+          </div> 
         </div>
-        <div class="col-xs-6 icon-v-center">
-          <span class="svg_1">
-           <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-jinbi"></use>
-            </svg>
-         </span>
-        <p class="iconword">金币：***</p>
+        <div class="row">
+          <div class="col-xs-6 icon-v-center">
+           <span class="svg_1">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jifen"></use>
+              </svg>
+           </span><p class="iconword">成就值：</p>
+          </div>
+          <div class="col-xs-6 icon-v-center">
+            <span class="svg_1">
+             <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jinbi"></use>
+              </svg>
+           </span>
+          <p class="iconword">金币：***</p>
+          </div>
         </div>
-      </div>
-      <h2 class="leidatitle">能力雷达图</h2>
-      <div class="area">
-        
-      </div>
-      <div class="row" id="finishrow">
-         <div class="finish col-xs-6" id="finishlist">
-          <a href="04chengjiuqingdan.html"><span class="svg">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-daoru"></use>
-            </svg></span></a>
-            <h3><a href="04chengjiuqingdan.html">成就清单</a></h3>
-            <h5 class="finish-h5"><a href="04chengjiuqingdan.html" class="finish-h5">查看历史成就</a></h5>
-          </span>
+        <h2 class="leidatitle">能力雷达图</h2>
+        <div class="area">
+          
         </div>
-         <div class="col-xs-6 finish" id="finishmuban">
-          <a href="04xuanzejianlimuban.html"><span class="svg">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-gerenjianli"></use>
-            </svg>
-         </span></a>
-          <h3><a href="04xuanzejianlimuban.html">导出简历</a></h3>
-          <h5 class="finish-h5"><a href="04xuanzejianlimuban.html">精美简历模板</a></h5>
-       </div>
-
+        <div class="row" id="finishrow" onclick="window.location='04chengjiuqingdan.html'">
+          <div class="finish col-xs-6" id="finishlist">
+            <a href="04chengjiuqingdan.html"><span class="svg">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-daoru"></use>
+              </svg></span></a>
+              <h3>成就清单</h3>
+              <h5 class="finish-h5">查看历史成就</h5>
+            </span>
+          </div>
+          <div class="col-xs-6 finish" id="finishmuban" onclick="window.location='04tianxiejianli.html'">
+            <a href="04xuanzejianlimuban.html"><span class="svg">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-gerenjianli"></use>
+              </svg>
+           </span></a>
+            <h3>导出简历</h3>
+            <h5 class="finish-h5">精美简历模板</h5>
+          </div>
+        </div>
       </div>
     </article>
+    <section>
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">修改激励语</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <textarea class="form-control" rows="3"></textarea>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+              <button type="button" class="btn btn-primary">保存</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <nav class="navbar navbar-fixed-bottom visible-xs" id="nav-dibu">
         <div class="container nav-dibu">

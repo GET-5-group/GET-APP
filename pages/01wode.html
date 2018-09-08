@@ -254,12 +254,12 @@
         </div>
         <div class="col-xs-8">
           <div class="row"><h5>180***1548</h5></div>
-          <div class="row"><button class="btn btn-default xiugai-btn">修改个人资料</button></div>
+          <div class="row"><button class="btn btn-default xiugai-btn" onclick="window.location='01gerenziliao.html'">修改个人资料</button></div>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-9"><h5>激励语：</h5></div>
-        <div class="col-xs-3"><button class="btn btn-default xiugai-btn-1">修改</button></div>
+        <div class="col-xs-3"><button class="btn btn-default xiugai-btn-1"  data-toggle="modal" data-target="#myModal1">修改</button></div>
       </div>
 
       <div class="row">
@@ -283,13 +283,13 @@
             <p class="iconword">金币：***</p>
           </div>
           <div class="col-xs-2 btn-center">
-            <button class="btn btn-info qiaodao-btn">签到</button>
+            <button class="btn btn-info qiaodao-btn" data-toggle="modal" data-target="#myModal2">签到</button>
           </div>
         </div>
       </div>
       <div class="container">
          <div class="row row-svg">
-            <div class="col-xs-4 svg-center">
+            <div class="col-xs-4 svg-center" onclick="window.location='02DISC01.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -301,7 +301,7 @@
                  <div class="col-12 "><span>性格测试</span></div>
               </div>
             </div>
-           <div class="col-xs-4 svg-center">
+           <div class="col-xs-4 svg-center" onclick="window.location='02zhiyechazhao.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -313,7 +313,7 @@
                  <div class="col-12 "><span>职业查找</span></div>
               </div>
             </div>
-            <div class="col-xs-4 svg-center">
+            <div class="col-xs-4 svg-center" onclick="window.location='02nenglipingding.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -327,7 +327,7 @@
             </div>
           </div>
          <div class="row row-svg">
-            <div class="col-xs-4 svg-center">
+            <div class="col-xs-4 svg-center" onclick="window.location='03xiaorizi.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -339,7 +339,7 @@
                  <div class="col-12 "><span>小日子</span></div>
               </div>
             </div>
-           <div class="col-xs-4 svg-center">
+           <div class="col-xs-4 svg-center" onclick="window.location='03tuibianjilu.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -351,7 +351,7 @@
                  <div class="col-12 "><span>蜕变记录</span></div>
               </div>
             </div>
-            <div class="col-xs-4 svg-center">
+            <div class="col-xs-4 svg-center" onclick="window.location='03renwudaka.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -365,7 +365,7 @@
             </div>
           </div>
          <div class="row row-svg">
-            <div class="col-xs-4 svg-center">
+            <div class="col-xs-4 svg-center" onclick="window.location='03xuexijindu.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -377,7 +377,7 @@
                  <div class="col-12 "><span>学习进度</span></div>
               </div>
             </div>
-           <div class="col-xs-4 svg-center">
+           <div class="col-xs-4 svg-center" onclick="window.location='04chengjiuqingdan.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -389,7 +389,7 @@
                  <div class="col-12 "><span>成就清单</span></div>
               </div>
             </div>
-            <div class="col-xs-4 svg-center">
+            <div class="col-xs-4 svg-center" onclick="window.location='04tianxiejianli.html'">
              <div class="row">
                 <div class="col-12"><span class="svg">
                   <svg class="icon" aria-hidden="true">
@@ -398,13 +398,56 @@
                 </div>
               </div>
               <div class="row">
-                 <div class="col-12 "><span>制作简历</span></div>
+                 <div class="col-12 "><span>填写简历</span></div>
               </div>
             </div>
           </div>
        </div>
     </article>
-
+    <section>
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">修改激励语</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <textarea class="form-control" rows="3"></textarea>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+              <button type="button" class="btn btn-primary">保存</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">签到</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <h4 class="text-center"> 恭喜你签到成功！</h4>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      $('qiaodao-btn').click(function() {
+        $('qiaodao-btn').text('已签到').addClass('disabled');
+      })
+    </script>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
