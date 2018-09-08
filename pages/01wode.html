@@ -151,6 +151,17 @@
 		.bgcolor{
 			background-color: #2aa094
 		}
+    .qiandao{
+      display: none;
+      text-align: center;
+      color: #999;
+      position: absolute;
+      background: #eee;
+      right: 30%;
+      width: 40%;
+      top:44%;
+      border-radius: 0.8rem;
+    }
 
 
 
@@ -424,35 +435,38 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">签到</h4>
-            </div>
-            <div class="modal-body">
-              <form>
-                <h4 class="text-center"> 恭喜你签到成功！</h4>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-            </div>
-          </div>
-        </div>
-      </div>
+     <div class="qiandao">
+       <h5>恭喜你签到成功<br><br>成就值 +1 </h5>
+     </div>
     </section>
-    <script type="text/javascript">
-      $('qiaodao-btn').click(function() {
-        $('qiaodao-btn').text('已签到').addClass('disabled');
-      })
-    </script>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- 引入iconfont字体图标-->
     <script src="../fonts/icons/font_783350_3kbws5kmv3r/iconfont.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+      var clearFlag=0;
+      var count = 1;
+      $(".qiaodao-btn").click(function(){
+
+        $(".qiandao").fadeIn(2400);
+        $(".qiandao").fadeOut(2400);
+
+      });
+      var autoClose = function(){
+                if(count>0){
+                    count--;
+                }else if(count<=0){
+                    window.clearInterval(clearFlag);
+                    $(".qiandao").fadeOut("slow");
+                    count = 3;
+                    $(".qiandao").toggle();
+                }
+            }
+    });
+    </script>
   </body>
 </html>
