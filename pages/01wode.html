@@ -162,7 +162,8 @@
       top:44%;
       border-radius: 0.8rem;
     }
-
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+    color: black;}
 
 
 
@@ -456,17 +457,6 @@
         $(".qiandao").fadeOut(2400);
 
       });
-      var autoClose = function(){
-                if(count>0){
-                    count--;
-                }else if(count<=0){
-                    window.clearInterval(clearFlag);
-                    $(".qiandao").fadeOut("slow");
-                    count = 3;
-                    $(".qiandao").toggle();
-                }
-            }
-    });
     </script>
   </body>
 </html>
